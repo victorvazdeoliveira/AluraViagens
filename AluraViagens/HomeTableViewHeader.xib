@@ -14,12 +14,11 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="300"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uSR-QF-pog" userLabel="Header View">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uSR-QF-pog" userLabel="Header View">
                     <rect key="frame" x="0.0" y="0.0" width="414" height="250"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="alura viagens" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GsI-nU-Fdx">
-                            <rect key="frame" x="27" y="33" width="144" height="33"/>
+                            <rect key="frame" x="27" y="48" width="144" height="33"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" name="KohinoorDevanagari-Semibold" family="Kohinoor Devanagari" pointSize="23"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -27,26 +26,45 @@
                         </label>
                     </subviews>
                     <color key="backgroundColor" red="0.1176470588" green="0.23137254900000001" blue="0.46666666670000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="250" id="HJk-Ry-fgR"/>
+                    </constraints>
                 </view>
-                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MCE-S4-Vof" userLabel="Banner View">
-                    <rect key="frame" x="20" y="136" width="375" height="130"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MCE-S4-Vof" userLabel="Banner View">
+                    <rect key="frame" x="20" y="130" width="375" height="130"/>
                     <subviews>
-                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6fh-vz-ZZe">
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6fh-vz-ZZe">
                             <rect key="frame" x="0.0" y="0.0" width="200" height="130"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" red="0.31764705882352939" green="0.70196078431372544" blue="0.69411764705882351" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </view>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qny-BT-ytf">
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qny-BT-ytf">
                             <rect key="frame" x="199" y="0.0" width="176" height="130"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         </imageView>
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="qny-BT-ytf" secondAttribute="bottom" id="3RY-zc-v2P"/>
+                        <constraint firstItem="6fh-vz-ZZe" firstAttribute="leading" secondItem="MCE-S4-Vof" secondAttribute="leading" id="KMu-v7-QjK"/>
+                        <constraint firstItem="qny-BT-ytf" firstAttribute="top" secondItem="MCE-S4-Vof" secondAttribute="top" id="L1O-dr-Pz6"/>
+                        <constraint firstItem="6fh-vz-ZZe" firstAttribute="top" secondItem="MCE-S4-Vof" secondAttribute="top" id="NKd-xb-cUY"/>
+                        <constraint firstAttribute="height" constant="130" id="QLT-A7-shq"/>
+                        <constraint firstItem="qny-BT-ytf" firstAttribute="width" secondItem="MCE-S4-Vof" secondAttribute="width" multiplier="0.469333" id="SzJ-WS-034"/>
+                        <constraint firstAttribute="trailing" secondItem="qny-BT-ytf" secondAttribute="trailing" id="ima-Zp-XeA"/>
+                        <constraint firstItem="6fh-vz-ZZe" firstAttribute="width" secondItem="MCE-S4-Vof" secondAttribute="width" multiplier="0.533333" id="r1y-VR-ro1"/>
+                        <constraint firstAttribute="bottom" secondItem="6fh-vz-ZZe" secondAttribute="bottom" id="y6u-g8-2V3"/>
+                    </constraints>
                 </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="MCE-S4-Vof" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="Ghk-b0-wvq"/>
+                <constraint firstItem="MCE-S4-Vof" firstAttribute="bottom" secondItem="uSR-QF-pog" secondAttribute="bottom" constant="10" id="Id7-ag-c1t"/>
+                <constraint firstItem="uSR-QF-pog" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Oa7-XI-6ca"/>
+                <constraint firstItem="uSR-QF-pog" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="Rq4-0M-LrD"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="MCE-S4-Vof" secondAttribute="trailing" constant="19" id="nxw-fv-CdZ"/>
+                <constraint firstItem="uSR-QF-pog" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="p3y-VT-Xuf"/>
+            </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
                 <outlet property="bannerImageView" destination="qny-BT-ytf" id="f1r-tX-OBq"/>
