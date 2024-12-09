@@ -27,7 +27,6 @@
                     <color key="backgroundColor" red="0.1176470588" green="0.23137254900000001" blue="0.46666666670000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="250" id="HJk-Ry-fgR"/>
-                        <constraint firstAttribute="width" constant="1000" id="LVw-r8-PPE"/>
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MCE-S4-Vof" userLabel="Banner View">
@@ -81,6 +80,7 @@
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="uSR-QF-pog" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="BAO-sS-pdI"/>
+                <constraint firstItem="uSR-QF-pog" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="2.41546" id="EEg-EO-xXr"/>
                 <constraint firstItem="MCE-S4-Vof" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="Ghk-b0-wvq"/>
                 <constraint firstItem="MCE-S4-Vof" firstAttribute="bottom" secondItem="uSR-QF-pog" secondAttribute="bottom" constant="10" id="Id7-ag-c1t"/>
                 <constraint firstItem="GsI-nU-Fdx" firstAttribute="leading" secondItem="y25-lI-sPL" secondAttribute="leading" constant="23" id="T3u-hw-RhO"/>
