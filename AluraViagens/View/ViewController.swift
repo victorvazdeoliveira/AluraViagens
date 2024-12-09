@@ -28,7 +28,7 @@ class ViewController: UIViewController {
         viagensTableView.delegate = self
         viagensTableView.contentInsetAdjustmentBehavior = .never
         viagensTableView.sectionHeaderTopPadding = 0
-        viagensTableView.contentInset = UIEdgeInsets(top: -1, left: 0, bottom: 0, right: 0);
+        viagensTableView.contentInset = UIDevice.current.userInterfaceIdiom == UIUserInterfaceIdiom.phone ? UIEdgeInsets(top: -1, left: 0, bottom: 0, right: 0) : UIEdgeInsets(top: -3, left: 0, bottom: 0, right: 0);
     }
 
     
@@ -38,7 +38,7 @@ class ViewController: UIViewController {
 extension ViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return sessaoDeViagens?[section].numeroDeLinhas ?? 0
+        sessaoDeViagens?[section].numeroDeLinhas ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -82,11 +82,11 @@ extension ViewController: UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 300
+        300
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 400
+        UIDevice.current.userInterfaceIdiom == UIUserInterfaceIdiom.phone ? 400 : 475
     }
     
     
